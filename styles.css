@@ -1,0 +1,324 @@
+@font-face {
+font-family: Big Caslon;
+src: url('fonts/BigCaslon.ttf');
+}
+
+@font-face {
+font-family: Neutra;
+src: url('fonts/NeutraText Book.otf');
+}
+
+
+html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.container{
+  position: absolute;
+  width:100%;
+  height:100%;
+}
+
+/* landing page */
+
+.landing-page {
+  font-family: Big Caslon;
+  color: #fff;
+  position: relative;
+  width:100%;
+  height:100%;
+  z-index:10;
+  background:url('img/mungzsquad1.jpg') #3f3f3f top center fixed no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.landing-page .content{
+  position: relative;
+  top: 25%;
+  width:33.333%;
+  margin:0 auto;
+  height:50%;
+}
+
+.landing-page .content .text {
+  position: absolute;
+  top: 30%;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.landing-page .content .text h1 {
+  letter-spacing: 6px;
+  font-weight: 200;
+}
+.landing-page .content .text p {
+  font-family: Neutra;
+  font-weight: 100;
+  font-style: italic;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+/* navbar */
+
+.navbar {
+  font-family: Neutra;
+  position: relative;
+  width: 100%;
+  height: 32px;
+  background: #fff;
+  z-index: 1000;
+  border-bottom:1px solid #f2f2f2;
+}
+
+.navbar .title {
+  float: left;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  line-height: 40px;
+  letter-spacing: 2px;
+}
+
+.navbar .title h2 {
+  position: relative;
+  width: auto;
+  bottom: 20px;
+  float: left;
+  padding-left: 20px;
+}
+
+
+.navbar .content {
+  float: right;
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  line-height: 40px;
+}
+
+
+.navbar .content ul {
+  position: relative;
+  width: auto;
+  height: 100%;
+  bottom: 16px;
+  float: right;
+  padding-right: 20px;
+  list-style: none;
+}
+
+.navbar .content li {
+  position: relative;
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.navbar .content li a {
+  text-decoration: none;
+}
+
+.navbar .content li a:active{
+  color:#000;
+}
+
+.navbar .content li a:visited{
+  color:#000;
+}
+
+.navbar .content li a:hover{
+  color:#ada074;
+  -webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+
+
+.main {
+  height: calc(100% - 42px);
+  width: 100%;
+  background: red;
+}
+
+.main .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.main .content .panel-one {
+  position: absolute;
+  border: 5px solid #eee;
+  width: 33.333%;
+  height: 100%;
+  background:url('img/eyecollage.jpg') #fff center center no-repeat;
+  background-size: auto 100%;
+}
+
+.main .content .panel-one:hover {
+  background: url('img/eyecollage2.jpg') #fff center center no-repeat;
+  background-size: auto 100%;
+}
+
+.panel-one .text-one {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: auto;
+  background: transparent;
+}
+
+.panel-one .text-one h2 {
+  text-align: center;
+}
+
+.main .content .panel-two {
+  position: absolute;
+  border: 5px solid #eee;
+  width: 33.333%;
+  left: 33.333%;
+  height: 100%;
+  background:url('img/leaf-1.jpg') #fff center center no-repeat;
+  background-size: auto 100%;
+}
+
+.main .content .panel-two:hover {
+  background: url('img/leaf.jpg') #fff center center no-repeat;
+  background-size: auto 100%;
+}
+
+.panel-two .text-two {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: auto;
+  background: transparent;
+}
+
+.panel-two .text-two h2 {
+  text-align: center;
+}
+
+.main .content .panel-three {
+  position: absolute;
+  border: 5px solid #eee;
+  width: 33.333%;
+  left: 66.666%;
+  height: 100%;
+  background:url('img/city-1.jpg') #fff center center no-repeat;
+  background-size: 100% auto;
+}
+
+.main .content .panel-three:hover {
+  background: url('img/city.jpg') #fff center center no-repeat;
+  background-size: 100% auto;
+}
+
+.panel-three .text-three {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: auto;
+  background: transparent;
+}
+
+.panel-three .text-three h2 {
+  text-align: center;
+}
+
+.main .content a {
+  text-decoration: none;
+  font-family: Neutra;
+  font-size: 16px;
+  padding: 2px;
+  color: #000;
+  text-shadow: 2px 2px #ada074;
+  letter-spacing: 3px;
+}
+
+.main .content a:active{
+  color:#000;
+}
+
+.main .content a:visited{
+  color:#000;
+}
+
+.main .content a:hover{
+  text-shadow: none;
+  color: #fff;
+  font-size: 22px;
+  -webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-ms-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+
+.about {
+  height: 100%;
+  width: 100%;
+  background: #fff;
+}
+
+.about .content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+.about-title {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  top: 20%;
+  background: transparent;
+  text-align: center;
+}
+
+.about-title h1 {
+  font-family: Big Caslon;
+  letter-spacing: 6px;
+  font-size: 100;
+  color: #000;
+  text-shadow: 2px 2px #ada074;
+  width: auto;
+}
+
+.about-title h1:hover {
+  text-shadow: none;
+}
+
+.about-text {
+  position: absolute;
+  width: 50%;
+  left: 25%;
+  height: auto;
+  top: 30%;
+  background: transparent;
+  text-align: center;
+  line-height: 30px;
+}
+
+.about-text p {
+  font-size: 20px;
+  font-family: Neutra;
+  font-weight: 100;
+}
